@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>iAlert Examples</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+	<script src="ialert.js"></script>
+	<style type="text/css">
+	button
+	{
+		border: #CCC;
+		color: #FFF;
+		padding: 10px;
+	}
+	.confirm{
+		background: #CC0000;
+	}
+	.ok{
+		background: #009900;
+	}
+	.warning
+	{
+		background: #2E8AE6;
+
+	}
+	.load
+	{
+		background: #FF7519;
+	}
+	.center
+	{
+		padding-top: 150px;
+		width: 800px;
+		text-align: center;
+		margin: auto;
+	}
+	.center h1
+	{
+		font-size: 5em;
+		margin-bottom: 20px;
+	}
+	.center h1 div
+	{
+		font-size: 20px !important;
+		color: #CCC;
+	}
+	.center h1 span
+	{
+		color: #CC0000;
+	}
+	.center .footer
+	{
+		
+		padding-top: 25px;
+		
+	}
+
+	.center .footer a
+	{
+	color: #0000FF ;
+	text-decoration: none;
+}
+
+	</style>
+	<script language="javascript">
+	function show_confirm()
+	{	
+		ialert.show("confirm","Do you realy want to continue ?",function(){alert("Thanks")});
+	}
+	function show_alert()
+	{
+	//ialert.show("alert","hello world",function(){alert("Call back function for alert")});
+	ialert.show("alert","hello world - Alert box");
+}
+function show_warning()
+{
+	ialert.show("warning","This is a warning");
+}
+function show_waiting()
+{
+	ialert.wait("Please wait",true);
+}
+</script>
+<link href="ialert.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+	<div class="center">
+		<h1><span>i</span>Alert<div>SIMPLE POPUPS</div></h1>
+	<button class="confirm"  onclick="show_confirm()">Confirm Box</button>
+	<button  class="ok" onclick="show_alert()">Alert Box</button>
+	<button class="warning"  onclick="show_warning()">Warning Box</button>
+	<button  class="load" onclick="show_waiting()">Waiting Box</button>
+	<div class="footer">
+		<a href="">Fork me @ github</a>
+	</div>
+</div>
+	<!--<div id="ialert_frame"></div>-->
+</body>
+</html>
