@@ -16,17 +16,17 @@ Include script and style to your page:
   <script src="ialert.js"></script>
   <link href="ialert.css" rel="stylesheet" type="text/css" />
   
-Methods availble
+<b>Methods availble</b>
   
   1. ialert.show(type,message ,callback);
   2. ialert.wait(message,true);// 'true' for cancel button 
   
   Eg:
   
-    <script language="javascript">
-      ialert.show("confirm","Do you realy want to continue ?",function(){alert("Thanks")});
-      ialert.wait("Please wait",true);
-    </script>  
+  <script language="javascript">
+    ialert.show("confirm","Do you realy want to continue ?",function(){alert("Thanks")});
+    ialert.wait("Please wait",true);
+  <script>  
     
     
 Alert Types for ialert.show method
