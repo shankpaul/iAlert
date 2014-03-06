@@ -18,8 +18,8 @@ Include script and style to your page:
   
 Methods availble
   
-  ialert.show(type,message ,callback);
-  ialert.wait(message,true);// 'true' for cancel button 
+  1. ialert.show(type,message ,callback);
+  2. ialert.wait(message,true);// 'true' for cancel button 
   
   Eg:
   
