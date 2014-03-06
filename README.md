@@ -23,10 +23,10 @@ Include script and style to your page:
   
 Eg:
   
-  <script language="javascript">
-    ialert.show("confirm","Do you realy want to continue ?",function(){alert("Thanks")});
-    ialert.wait("Please wait",true);
-  <script>  
+    <script language="javascript">
+      ialert.show("confirm","Do you realy want to continue ?",function(){alert("Thanks")});
+      ialert.wait("Please wait",true);
+    <script>  
     
     
 Alert Types for ialert.show method
