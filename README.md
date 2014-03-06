@@ -21,7 +21,7 @@ Include script and style to your page:
   1. ialert.show(type,message ,callback);
   2. ialert.wait(message,true);// 'true' for cancel button 
   
-  Eg:
+Eg:
   
   <script language="javascript">
     ialert.show("confirm","Do you realy want to continue ?",function(){alert("Thanks")});
